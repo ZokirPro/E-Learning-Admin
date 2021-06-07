@@ -1,5 +1,5 @@
 {% extends "app/base_site.html" %}
-
+{% load static %}
 {% block title %} Project Details {% endblock title %}
 
 {% block sidebar_class %}menu_fixed{% endblock sidebar_class %}
@@ -199,5 +199,5 @@
 {% block javascripts %}
   {{ block.super }}
   <!-- ECharts -->
-  <script src="/static/vendors/echarts/dist/echarts.min.js"></script>
+  <script src="{% static 'vendors/echarts/dist/echarts.min.js' %}"></script>
 {% endblock javascripts %}

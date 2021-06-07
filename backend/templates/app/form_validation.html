@@ -1,5 +1,5 @@
 {% extends "app/base_site.html" %}
-
+{% load static %}
 {% block title %} Form Validation {% endblock title %}
 
 {% block content %}
@@ -140,5 +140,5 @@
 {% block javascripts %}
   {{ block.super }}
   <!-- validator -->
-  <script src="/static/vendors/validator/validator.js"></script>
+  <script src="{% static 'vendors/validator/validator.js' %}"></script>
 {% endblock javascripts %}

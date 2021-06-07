@@ -1,12 +1,12 @@
 {% extends "app/base_site.html" %}
-
+{% load static %}
 {% block title %} General Elements {% endblock title %}
 
 {% block stylesheets %}
   {{ block.super }}
-  <link href="/static/vendors/pnotify/dist/pnotify.css" rel="stylesheet">
-  <link href="/static/vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
-  <link href="/static/vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+  <link href="{% static 'vendors/pnotify/dist/pnotify.css' %}" rel="stylesheet">
+  <link href="{% static 'vendors/pnotify/dist/pnotify.buttons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendors/pnotify/dist/pnotify.nonblock.css' %}" rel="stylesheet">
 {% endblock stylesheets %}
 
 {% block content %}
@@ -1351,7 +1351,7 @@
 {% block javascripts %}
   {{ block.super }}
   <!-- PNotify -->
-  <script src="/static/vendors/pnotify/dist/pnotify.js"></script>
-  <script src="/static/vendors/pnotify/dist/pnotify.buttons.js"></script>
-  <script src="/static/vendors/pnotify/dist/pnotify.nonblock.js"></script>
+  <script src="{% static 'vendors/pnotify/dist/pnotify.js' %}"></script>
+  <script src="{% static 'vendors/pnotify/dist/pnotify.buttons.js' %}"></script>
+  <script src="{% static 'vendors/pnotify/dist/pnotify.nonblock.js' %}"></script>
 {% endblock javascripts %}
