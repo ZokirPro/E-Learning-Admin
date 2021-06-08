@@ -25,7 +25,7 @@ SECRET_KEY = 'ymi@wq+7*18r$459!k#j^v^2(+pn62k^i1(b3y8@)&6j$yz)z9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lms-admin.kibera-soft.uz','188.127.224.130','127.0.0.1']
 
 
 # Application definition

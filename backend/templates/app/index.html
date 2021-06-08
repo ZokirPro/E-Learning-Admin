@@ -1,7 +1,16 @@
+{% extends "app/base_site.html" %}
+
 {% load static %}
-{% extends "app/base_site.html" %} {% block title %} Dashboard 1 {% endblock
-title %} {% block stylesheets %} {{ block.super }} {% endblock stylesheets %} {%
-block content %}
+
+{% block title %} 
+  Dashboard1 
+{% endblock title %}
+
+{% block stylesheets %} 
+  {{ block.super }} 
+{% endblock stylesheets %} 
+
+{% block content %}
 <div class="right_col" role="main">
   <!-- top tiles -->
   <div class="row tile_count">
@@ -877,7 +886,9 @@ block content %}
     </div>
   </div>
 </div>
-{% endblock content %} {% block javascripts %} {{ block.super}}
+{% endblock content %} 
+{% block javascripts %} 
+{{ block.super}}
 <!-- Chart.js -->
 <script src="{% static 'vendors/Chart.js/dist/Chart.min.js' %}"></script>
 <!-- gauge.js -->

@@ -1,12 +1,19 @@
-{% extends "app/base_site.html" %} {% block title %} Form Upload {% endblock
-title %} {% block stylesheets %} {{ block.super }}
+{% extends "app/base_site.html" %} 
+
+{% block title %} Form Upload {% endblock title %} 
+
 {% load static %}
+
+{% block stylesheets %} {{ block.super }}
+
 <!-- Dropzone.js -->
 <link
   href="{% static 'vendors/dropzone/dist/min/dropzone.min.css' %}"
   rel="stylesheet"
 />
-{% endblock stylesheets %} {% block content %}
+{% endblock stylesheets %}
+
+{% block content %}
 <div class="right_col" role="main">
   <div class="">
     <div class="page-title">
