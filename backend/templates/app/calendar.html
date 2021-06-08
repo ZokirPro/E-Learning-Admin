@@ -1,10 +1,5 @@
-{% extends "app/base_site.html" %} 
-
-{%load static %}
-
-{% block title %} Form Advanced {% endblock title %} 
-
-{% block stylesheets %} {{ block.super }}
+{% extends "app/base_site.html" %} {%load static %} {% block title %} Form
+Advanced {% endblock title %} {% block stylesheets %} {{ block.super }}
 <!-- FullCalendar -->
 <link
   href="{% static 'vendors/fullcalendar/dist/fullcalendar.min.css' %}"
@@ -15,9 +10,7 @@
   rel="stylesheet"
   media="print"
 />
-{% endblock stylesheets %} 
-
-{% block content %}
+{% endblock stylesheets %} {% block content %}
 <div class="right_col" role="main">
   <div class="">
     <div class="page-title">
@@ -216,11 +209,8 @@
   <div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
   <!-- /calendar modal -->
 </div>
-{% endblock content %} 
-
-{% block javascripts %} 
-{{ block.super }}
+{% endblock content %} {% block javascripts %} {{ block.super }}
 <!-- FullCalendar -->
 <script src="{% static 'vendors/moment/min/moment.min.js' %}"></script>
-<script src="{% static 'vendors/fullcalendar/dist/fullcalendar.min.js' %"></script>
+<script src="{% static 'vendors/fullcalendar/dist/fullcalendar.min.js' %}"></script>
 {% endblock javascripts %}
